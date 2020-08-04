@@ -246,17 +246,17 @@ class AddItem extends LitElement {
 					<h1>LETS PLAN 🎯</h1>
 				</div>
 				<div class="d-flex">
-					<button class$="btn-tab ${this.time === 1 ? 'active' : ''}" on-click="${() => {
+					<button id="today" class$="btn-tab ${this.time === 1 ? 'active' : ''}" on-click="${() => {
         this.time = 1
         this.dispatchEvent(new CustomEvent('todoListTimeChanged', { bubbles: true, composed: true, detail: { time: this.time } }));
       }}">Today</button>
-					<button class$="btn-tab ${this.time === 2 ? 'active' : ''}" on-click="${() => {
+					<button id="later" class$="btn-tab ${this.time === 2 ? 'active' : ''}" on-click="${() => {
         this.time = 2
         this.dispatchEvent(new CustomEvent('todoListTimeChanged', { bubbles: true, composed: true, detail: { time: this.time } }));
       }}">Later</button>
 				</div>
 				<div class="input-container">
-          <textarea name="" 
+          <textarea id="enter-text-area" 
             value$=${props.todoItem} 
             on-keyup="${(e) => this._inputKeypress(e)}"
             rows="2" placeholder="👉 Write a task"></textarea>
