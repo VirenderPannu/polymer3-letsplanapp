@@ -101,7 +101,7 @@ class ListItems extends LitElement {
         </style>
         <div class="lists">
 			<div class$="today list ${this.checkToday()}">
-				<h2 class="title">Today's List</h2>
+				<h2 class="title">Todays List</h2>
                 <div class="list-wrapper">
                 ${repeat(this.todoList, (item) => item.time === 1 ? html`
 					<todo-item todoItem=${item}></todo-item>
