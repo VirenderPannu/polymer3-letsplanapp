@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently 'npm run serve' 'npm run watch' ",
-    "serve": "polymer serve --port 8085",
-    "watch": "browser-sync start --proxy localhost:8085 --open \"src/components\" --files \"**/*.js\""
+    "serve": "polymer serve --port 3000",
+    "watch": "browser-sync start --proxy localhost:3000 --open \"src/components\" --files \"**/*.js\""
   },
   "author": "",
   "license": "ISC",
