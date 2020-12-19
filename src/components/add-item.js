@@ -98,7 +98,6 @@ class AddItem extends LitElement {
           display:block;
       }
       .add .btn-enter {
-          display:none;
           position: absolute;
           font-size:0.75rem;
           text-transform: uppercase;
